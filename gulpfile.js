@@ -15,6 +15,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var surge = require("gulp-surge");
 
 gulp.task("css", function () {
   return gulp
@@ -105,5 +106,13 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+gulp.task("surge", function () {
+  return surge({
+    project: "./build",
+    domain: "di-bikes.surge.sh",
+  });
+});
+
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
+gulp.task("deploy", gulp.series("build", "surge"));
