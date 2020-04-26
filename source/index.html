@@ -10,6 +10,9 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css" />
+  <script
+    src="https://api-maps.yandex.ru/2.0-stable/?apikey=d8e67e14-c503-41ce-bf86-0af8c74b36dd&load=package.standard&lang=ru-RU"
+    type="text/javascript"></script>
 </head>
 
 <body>
@@ -36,11 +39,22 @@
     </div>
     <form class="header__form">
       <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-      <input type="text" placeholder="Введите Ваше Имя">
-      <input type="text" placeholder="Введите Ваш номер телефона">
+      <input type="text" name="name" aria-label="Name" placeholder="Введите Ваше Имя">
+      <input type="tel" name="phone" aria-label="Phone" placeholder="Введите Ваш номер телефона">
       <button type="submit">Подобрать велосипед мечты</button>
     </form>
   </header>
+  <footer class="footer">
+    <h2>Как нас найти?</h2>
+    <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+    <div class="footer__map-wrapper">
+      <div id="map" class="footer__map"></div>
+    </div>
+    <div class="footer__contacts">
+      <div class="footer__email">puteshestviemechta@gmail.ru</div>
+      <div class="footer__phone">+7 (499)-784-684-49</div>
+    </div>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 
