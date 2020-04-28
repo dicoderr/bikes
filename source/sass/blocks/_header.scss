@@ -1,0 +1,182 @@
+.header {
+  display: flex;
+  justify-content: center;
+
+  .header__banner {
+    width: 100%;
+    height: 825px;
+
+    background: $color4 url("../img/bike.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .header__text {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    max-width: 874px;
+    margin: 318px auto 0;
+    padding-top: 41px;
+
+    h1 {
+      width: 393px;
+      margin-bottom: 24px;
+
+      color: $white;
+
+      font-size: 4.6rem;
+      line-height: 6.4rem;
+    }
+
+    p {
+      width: 393px;
+
+      color: rgba(255, 255, 255, 0.8);
+
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 3.2rem;
+    }
+  }
+
+  .header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .header__form {
+    position: absolute;
+    top: 318px;
+
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 80%;
+    max-width: 874px;
+    margin: 0 auto;
+
+    p {
+      width: 100%;
+      max-width: 327px;
+      margin-bottom: 20px;
+
+      text-align: center;
+
+      color: $white;
+    }
+
+    input {
+      width: 100%;
+      max-width: 327px;
+      height: 48px;
+      margin-bottom: 20px;
+      padding-left: 29px;
+
+      border: 1px solid $color5;
+      border-radius: 4px;
+
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+    }
+
+    button {
+      width: 100%;
+      max-width: 326px;
+      height: 51px;
+
+      border: none;
+      border-radius: 6px;
+      background-color: $color2;
+
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .header__banner {
+      width: 100%;
+      height: 81vw;
+    }
+
+    .header__text {
+      position: static;
+
+      width: 95%;
+      margin-top: 31vw;
+      padding-top: 0;
+
+      h1 {
+        margin-top: -20px;
+
+        font-size: 3.8rem;
+      }
+
+      p {
+        max-width: 450px;
+      }
+    }
+
+    .header__form {
+      top: 31vw;
+
+      width: 95%;
+    }
+
+    .header__logo {
+      top: 25px;
+      left: 21px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+
+    .header__banner {
+      height: auto;
+      max-height: 390px;
+    }
+
+    .header__text {
+      align-items: center;
+
+      margin: 134px auto 70px;
+
+      text-align: center;
+
+      h1 {
+        width: auto;
+
+        font-size: 3rem;
+        line-height: 4.2rem;
+      }
+
+      p {
+        width: auto;
+
+        font-size: 1.8rem;
+      }
+    }
+
+    .header__form {
+      position: static;
+
+      width: 90%;
+      max-width: 321px;
+      padding-top: 70px;
+
+      font-size: 1.8rem;
+
+      p {
+        color: $black;
+      }
+    }
+  }
+}

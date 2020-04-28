@@ -1,0 +1,117 @@
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 96px 0;
+
+  h2 {
+    margin-bottom: 30px;
+
+    color: $color1;
+
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3rem;
+  }
+
+  p {
+    width: 555px;
+    margin-bottom: 41px;
+
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.7);
+
+    font-size: 1.7rem;
+    line-height: 3.1rem;
+  }
+
+  .footer__map-wrapper {
+    width: 66%;
+    min-width: 698px;
+    height: 530px;
+    margin: 0 auto 38px;
+  }
+
+  .footer__map {
+    width: 100%;
+    height: 530px;
+  }
+
+  .footer__contacts {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    max-width: 558px;
+
+    color: rgba(0, 0, 0, 0.5);
+
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+
+    div {
+      display: flex;
+      align-items: center;
+
+      margin: 0 auto;
+    }
+
+    div::before {
+      margin-right: 15px;
+
+      content: "";
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  .footer__email::before {
+    width: 26px;
+    height: 20px;
+
+    background-image: url("../img/ic-mail.svg");
+  }
+
+  .footer__phone::before {
+    width: 21px;
+    height: 22px;
+
+    background-image: url("../img/ic-phone.svg");
+  }
+
+  @media (max-width: 767px) {
+    padding: 52px 0;
+
+    p {
+      width: 90%;
+    }
+
+    .footer__map-wrapper {
+      width: 90%;
+      min-width: auto;
+      max-height: 70vw;
+      margin-bottom: 20px;
+    }
+
+    .footer__map {
+      max-height: 70vw;
+    }
+
+    .footer__contacts {
+      max-width: 450px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    padding: 36px 0;
+
+    .footer__map-wrapper {
+      width: 100%;
+      margin-bottom: 31px;
+    }
+  }
+}

@@ -1,0 +1,177 @@
+.navbar {
+  position: fixed;
+  z-index: 1;
+
+  width: 100%;
+
+  color: $white;
+
+  .navbar__burger {
+    display: none;
+  }
+
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 80%;
+    max-width: 874px;
+    height: 62px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    list-style: none;
+
+    opacity: 0.7;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .navbar__menu li {
+    opacity: 0.7;
+  }
+
+  @media (max-width: 1023px) {
+    .navbar__menu {
+      width: 75%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .navbar__menu {
+      position: absolute;
+
+      display: none;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      width: 100%;
+      height: 100vh;
+      padding: 30px 0;
+      padding-top: 100px;
+
+      opacity: 1;
+      background: $white;
+    }
+
+    .navbar__menu li {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+
+      width: 100%;
+      margin-bottom: 30px;
+      padding-left: 16px;
+
+      opacity: 1;
+      color: $color6;
+      background-color: $color7;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        right: 18px;
+
+        display: block;
+
+        width: 25px;
+        height: 25px;
+
+        content: "";
+        transform: translateY(-50%);
+
+        background: url("../img/ic-arrow.svg") no-repeat center center;
+      }
+    }
+
+    .navbar__menu a {
+      display: flex;
+      align-items: center;
+
+      width: 100%;
+      height: 60px;
+    }
+
+    .navbar__burger {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+
+      display: block;
+
+      width: 50px;
+      height: 50px;
+
+      cursor: pointer;
+
+      background-color: $color2;
+    }
+
+    .navbar__burger span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 22.5px;
+      height: 1px;
+
+      transform: translate(-50%, -50%);
+
+      border: 1px solid black;
+
+      &::before,
+      &::after {
+        position: absolute;
+        left: -1px;
+
+        display: block;
+
+        width: 100%;
+
+        content: "";
+
+        border: 1px solid black;
+      }
+
+      &::before {
+        top: -9px;
+      }
+
+      &::after {
+        top: 7px;
+      }
+    }
+
+    &.shown {
+      .navbar__menu {
+        display: flex;
+      }
+
+      .navbar__burger {
+        background-color: $white;
+      }
+
+      .navbar__burger span {
+        border: none;
+
+        &::before {
+          top: 0;
+
+          transform: rotate(45deg);
+
+          border: 1px solid rgba(20, 21, 23, 0.2);
+        }
+
+        &::after {
+          top: 0;
+
+          transform: rotate(-45deg);
+
+          border: 1px solid rgba(20, 21, 23, 0.2);
+        }
+      }
+    }
+  }
+}
