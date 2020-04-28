@@ -2,18 +2,21 @@
 var burger = document.querySelector('.navbar__burger');
 var navbar = document.querySelector('.navbar');
 
-if (burger) {
+if (burger && navbar) {
   burger.addEventListener('click', function () {
-    if (navbar) {
-      navbar.classList.toggle('shown');
-    }
+    navbar.classList.toggle('shown');
   });
 }
 
-
 function init() {
+  var map = document.getElementById('map');
+  if (!map) {
+    return null;
+  }
+  var lat = +map.dataset.lat;
+  var lng = +map.dataset.lng;
   return new ymaps.Map('map', {
-    center: [59.938635, 30.323118],
+    center: [lat, lng],
     zoom: 15,
     controls: []
   });
