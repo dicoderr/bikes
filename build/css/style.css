@@ -43,7 +43,7 @@ body {
 
 .navbar {
   position: fixed;
-  z-index: 1;
+  z-index: 12;
   width: 100%;
   color: #ffffff; }
   .navbar .navbar__burger {
@@ -111,6 +111,8 @@ body {
       width: 50px;
       height: 50px;
       cursor: pointer;
+      border: none;
+      outline: none;
       background-color: #0ad9c6; }
     .navbar .navbar__burger span {
       position: absolute;
@@ -124,7 +126,7 @@ body {
         position: absolute;
         left: -1px;
         display: block;
-        width: 100%;
+        width: 22.5px;
         content: "";
         border: 1px solid black; }
       .navbar .navbar__burger span::before {
@@ -134,17 +136,18 @@ body {
     .navbar.shown .navbar__menu {
       display: flex; }
     .navbar.shown .navbar__burger {
+      opacity: 0.2;
       background-color: #ffffff; }
     .navbar.shown .navbar__burger span {
       border: none; }
       .navbar.shown .navbar__burger span::before {
         top: 0;
         transform: rotate(45deg);
-        border: 1px solid rgba(20, 21, 23, 0.2); }
+        border: 1px solid #141517; }
       .navbar.shown .navbar__burger span::after {
         top: 0;
         transform: rotate(-45deg);
-        border: 1px solid rgba(20, 21, 23, 0.2); } }
+        border: 1px solid #141517; } }
 
 .header {
   display: flex;
