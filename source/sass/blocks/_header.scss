@@ -72,7 +72,8 @@
       color: $white;
     }
 
-    input {
+    input[type="text"],
+    input[type="tel"] {
       width: 100%;
       max-width: 327px;
       height: 48px;
