@@ -166,12 +166,14 @@ body {
     margin: 318px auto 0;
     padding-top: 41px; }
     .header .header__text h1 {
+      z-index: 1;
       width: 393px;
       margin-bottom: 24px;
       color: #ffffff;
       font-size: 4.6rem;
       line-height: 6.4rem; }
     .header .header__text p {
+      z-index: 1;
       width: 393px;
       color: rgba(255, 255, 255, 0.8);
       font-size: 2rem;
@@ -179,6 +181,7 @@ body {
       line-height: 3.2rem; }
   .header .header__logo {
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0; }
   .header .header__form {
@@ -197,7 +200,8 @@ body {
       margin-bottom: 20px;
       text-align: center;
       color: #ffffff; }
-    .header .header__form input {
+    .header .header__form input[type="text"],
+    .header .header__form input[type="tel"] {
       width: 100%;
       max-width: 327px;
       height: 48px;
@@ -333,7 +337,7 @@ body {
     position: relative;
     max-width: 30%;
     margin-bottom: 50px; }
-  .bikes figure:first-child picture::before {
+  .bikes figure.bikes__andreas picture::before {
     position: absolute;
     bottom: 0;
     width: 180px;
@@ -342,9 +346,9 @@ body {
     transform: translate(-60px, -150%);
     border: 27px solid #0ad9c6;
     border-radius: 50%; }
-  .bikes figure:nth-child(2) {
+  .bikes figure.bikes__eberhard {
     top: 29px; }
-  .bikes figure:nth-child(2) picture::before {
+  .bikes figure.bikes__eberhard picture::before {
     position: absolute;
     z-index: 11;
     top: -15px;
@@ -353,7 +357,7 @@ body {
     height: 37px;
     content: "";
     background-color: #000000; }
-  .bikes figure:nth-child(2) picture::after {
+  .bikes figure.bikes__eberhard picture::after {
     position: absolute;
     z-index: 11;
     right: -20px;
@@ -362,7 +366,7 @@ body {
     height: 47px;
     content: "";
     border: 8px solid #0ad9c6; }
-  .bikes figure:last-child picture::before {
+  .bikes figure.bikes__roger picture::before {
     position: absolute;
     z-index: 11;
     top: -35px;
@@ -386,7 +390,7 @@ body {
   @media (max-width: 1023px) {
     .bikes figure {
       max-width: 25%; }
-    .bikes figure:first-child picture::before {
+    .bikes figure.bikes__andreas picture::before {
       transform: translate(-60px, -80%); } }
   @media (max-width: 767px) {
     .bikes {
@@ -401,16 +405,16 @@ body {
         padding-bottom: 70px; }
       .bikes figure {
         max-width: none; }
-      .bikes figure:first-child picture::before {
+      .bikes figure.bikes__andreas picture::before {
         width: 127px;
         height: 127px;
         transform: translate(-45px, -25px);
         border-width: 18px; }
-      .bikes figure:nth-child(2) {
+      .bikes figure.bikes__eberhard {
         top: 0; }
-      .bikes figure:nth-child(2) picture::before, .bikes figure:nth-child(2) picture::after {
+      .bikes figure.bikes__eberhard picture::before, .bikes figure.bikes__eberhard picture::after {
         display: none; }
-      .bikes figure:last-child picture::before {
+      .bikes figure.bikes__roger picture::before {
         top: -25px;
         right: -85px;
         width: 68px;
@@ -504,11 +508,11 @@ body {
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.6rem;
     line-height: 3.2rem; }
-    .footer .footer__contacts div {
+    .footer .footer__contacts a {
       display: flex;
       align-items: center;
       margin: 0 auto; }
-    .footer .footer__contacts div::before {
+    .footer .footer__contacts a::before {
       margin-right: 15px;
       content: "";
       background-repeat: no-repeat;
