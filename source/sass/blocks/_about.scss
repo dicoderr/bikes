@@ -22,6 +22,8 @@
 
     padding-right: 28px;
     padding-left: 28px;
+
+    counter-reset: item;
   }
 
   .about__fact {
@@ -33,17 +35,25 @@
     max-width: 263px;
     margin: 0 auto 30px;
 
-    h3 {
+    text-align: center;
+
+    font-size: 2.2rem;
+    line-height: 3.4rem;
+
+    &::before {
+      display: inline-block;
+
       margin-bottom: 15px;
 
+      content: "0" counter(item);
+      counter-increment: item;
+      letter-spacing: -1.3px;
+
       color: $color2;
-    }
 
-    p {
-      text-align: center;
-
-      font-size: 2.2rem;
-      line-height: 3.4rem;
+      font-size: 2.8rem;
+      font-weight: bold;
+      line-height: 3.8rem;
     }
   }
 
@@ -67,9 +77,7 @@
       margin-bottom: 30px;
       padding: 0 10px;
 
-      p {
-        font-size: 1.8rem;
-      }
+      font-size: 1.8rem;
     }
   }
 }

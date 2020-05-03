@@ -283,21 +283,28 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding-right: 28px;
-    padding-left: 28px; }
+    padding-left: 28px;
+    counter-reset: item; }
   .about .about__fact {
     display: flex;
     align-items: center;
     flex: 0 1 22%;
     flex-direction: column;
     max-width: 263px;
-    margin: 0 auto 30px; }
-    .about .about__fact h3 {
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 3.4rem; }
+    .about .about__fact::before {
+      display: inline-block;
       margin-bottom: 15px;
-      color: #0ad9c6; }
-    .about .about__fact p {
-      text-align: center;
-      font-size: 2.2rem;
-      line-height: 3.4rem; }
+      content: "0" counter(item);
+      counter-increment: item;
+      letter-spacing: -1.3px;
+      color: #0ad9c6;
+      font-size: 2.8rem;
+      font-weight: bold;
+      line-height: 3.8rem; }
   @media (max-width: 1023px) {
     .about h2 {
       font-size: 2.4rem;
@@ -310,9 +317,8 @@ body {
       .about .about__fact {
         flex: 0 1 auto;
         margin-bottom: 30px;
-        padding: 0 10px; }
-        .about .about__fact p {
-          font-size: 1.8rem; } }
+        padding: 0 10px;
+        font-size: 1.8rem; } }
 
 .bikes {
   display: flex;
