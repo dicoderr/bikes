@@ -6,6 +6,12 @@ if (burger && navbar) {
   burger.addEventListener('click', function () {
     navbar.classList.toggle('shown');
   });
+  var menuLinks = document.querySelectorAll('.navbar__menu-link');
+  menuLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      navbar.classList.remove('shown');
+    });
+  });
 }
 
 function init() {
