@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 12;
 
-  width: 100%;
+  width: 100vw;
 
   color: $white;
 
@@ -15,11 +15,10 @@
     align-items: center;
     justify-content: space-between;
 
-    width: 80%;
-    max-width: 874px;
+    width: 74.91%;
     height: 62px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 15px 22px 0 19px;
 
     list-style: none;
 
@@ -28,18 +27,20 @@
   }
 
   .navbar__menu-item {
+    letter-spacing: -0.005em;
+
     opacity: 0.7;
+
+    &:not(:last-child) {
+      margin-right: 11.57%;
+    }
   }
 
   @media (max-width: 1023px) {
     .navbar__menu {
-      width: 75%;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .navbar__menu {
       position: absolute;
+      top: 0;
+      left: 0;
 
       display: none;
       flex-direction: column;
@@ -67,6 +68,10 @@
       opacity: 1;
       color: $color6;
       background-color: $color7;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
 
       &::before {
         position: absolute;

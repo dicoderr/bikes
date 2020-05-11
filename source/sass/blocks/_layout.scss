@@ -1,0 +1,16 @@
+.container {
+  width: 80.97%;
+  min-width: 970px;
+  max-width: 1166px;
+  margin: 0 auto;
+
+  @media (max-width: 1023px) {
+    width: 90.88%;
+    min-width: auto;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 0 15px;
+  }
+}

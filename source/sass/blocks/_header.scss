@@ -2,12 +2,20 @@
   display: flex;
   justify-content: center;
 
-  .header__banner {
-    width: 100%;
-    height: 825px;
+  height: 80vw;
+  max-height: 825px;
+  padding-top: 318px;
 
-    background: $color4 url("../img/bike.jpg") no-repeat center;
-    background-size: cover;
+  background: $color4 url("../img/bike.jpg") no-repeat center;
+  background-size: cover;
+
+  .header__banner {
+    display: flex;
+    justify-content: space-between;
+
+    width: 75.38%;
+    max-width: 880px;
+    margin: 0 auto;
   }
 
   .header__text {
@@ -16,16 +24,15 @@
     display: flex;
     flex-direction: column;
 
-    width: 80%;
-    max-width: 874px;
-    margin: 318px auto 0;
-    padding-top: 41px;
+    width: 44.71%;
+    padding-top: 52px;
 
     h1 {
       z-index: 1;
 
-      width: 393px;
       margin-bottom: 24px;
+
+      letter-spacing: -0.005em;
 
       color: $white;
 
@@ -36,7 +43,7 @@
     p {
       z-index: 1;
 
-      width: 393px;
+      letter-spacing: -0.005em;
 
       color: rgba(255, 255, 255, 0.8);
 
@@ -50,36 +57,33 @@
     position: absolute;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: -2px;
   }
 
   .header__form {
-    position: absolute;
-    top: 318px;
-
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    justify-content: center;
 
-    width: 80%;
-    max-width: 874px;
-    margin: 0 auto;
+    width: 37.16%;
+    padding-top: 5px;
 
     p {
-      width: 100%;
-      max-width: 327px;
       margin-bottom: 20px;
 
       text-align: center;
+      letter-spacing: -0.005em;
 
       color: $white;
+
+      font-size: 1.7rem;
+      font-weight: 600;
+      line-height: 2.8rem;
     }
 
     input[type="text"],
     input[type="tel"] {
       width: 100%;
-      max-width: 327px;
       height: 48px;
       margin-bottom: 20px;
       padding-left: 29px;
@@ -93,46 +97,72 @@
 
     button {
       width: 100%;
-      max-width: 326px;
       height: 51px;
 
       border: none;
       border-radius: 6px;
       background-color: $color2;
 
+      font-family: "Overpass", sans-serif;
       font-size: 1.5rem;
       font-weight: 600;
+      line-height: 1.4rem;
     }
   }
 
   @media (max-width: 1023px) {
+    height: 340px;
+    margin-bottom: 413px;
+    padding-top: 0;
+
+    background-position: 0 -50px;
+    background-size: cover;
+
     .header__banner {
-      width: 100%;
-      height: 81vw;
+      align-items: center;
+      flex-direction: column;
+
+      padding-top: 85px;
     }
 
     .header__text {
       position: static;
 
-      width: 95%;
-      margin-top: 31vw;
-      padding-top: 0;
+      align-items: center;
+
+      width: 100%;
+      margin-bottom: 146px;
+
+      text-align: center;
 
       h1 {
-        margin-top: -20px;
+        margin-bottom: 19px;
 
-        font-size: 3.8rem;
+        font-size: 3rem;
+        line-height: 4.2rem;
       }
 
       p {
-        max-width: 450px;
+        max-width: 435px;
       }
     }
 
     .header__form {
-      top: 31vw;
+      width: 62%;
 
-      width: 95%;
+      p {
+        max-width: none;
+        margin-bottom: 29px;
+
+        letter-spacing: 0.7px;
+
+        color: #000000;
+      }
+
+      input[type="text"],
+      input[type="tel"] {
+        padding-left: 19px;
+      }
     }
 
     .header__logo {
@@ -142,46 +172,52 @@
   }
 
   @media (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
+    height: 390px;
+
+    background-position: center;
+    background-size: cover;
 
     .header__banner {
-      height: auto;
-      max-height: 390px;
+      width: 100%;
+      padding-top: 71px;
     }
 
     .header__text {
-      align-items: center;
-
-      margin: 134px auto 70px;
-
-      text-align: center;
-
-      h1 {
-        width: auto;
-
-        font-size: 3rem;
-        line-height: 4.2rem;
-      }
+      max-width: 350px;
+      margin-bottom: 135px;
 
       p {
-        width: auto;
+        max-width: none;
 
         font-size: 1.8rem;
       }
     }
 
+    .header__logo {
+      left: 17px;
+    }
+
     .header__form {
-      position: static;
-
-      width: 90%;
-      max-width: 321px;
-      padding-top: 70px;
-
-      font-size: 1.8rem;
+      width: 100%;
+      max-width: 450px;
 
       p {
-        color: $black;
+        margin-bottom: 19px;
+
+        letter-spacing: 0;
+
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+      }
+
+      input[type="text"],
+      input[type="tel"] {
+        padding-top: 4px;
+        padding-left: 26px;
+      }
+
+      button {
+        padding-top: 2px;
       }
     }
   }

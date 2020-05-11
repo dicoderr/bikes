@@ -12,107 +12,129 @@
 
 <body>
   <nav class="navbar">
-    <button type="button" class="navbar__burger" aria-label="Кнопка меню">
-      <span aria-hidden="true"></span>
-    </button>
-    <ul class="navbar__menu">
-      <li class="navbar__menu-item">
-        <a class="navbar__menu-link" href="#about">О нас</a>
-      </li>
-      <li class="navbar__menu-item">
-        <a class="navbar__menu-link" href="#bikes">Виды велосипедов</a>
-      </li>
-      <li class="navbar__menu-item">
-        <a class="navbar__menu-link" href="#media">Видео про велосипеды</a>
-      </li>
-      <li class="navbar__menu-item">
-        <a class="navbar__menu-link" href="#where">Контакты</a>
-      </li>
-    </ul>
+    <div class="container">
+      <button type="button" class="navbar__burger" aria-label="Кнопка меню">
+        <span aria-hidden="true"></span>
+      </button>
+      <ul class="navbar__menu">
+        <li class="navbar__menu-item">
+          <a class="navbar__menu-link" href="#about">О нас</a>
+        </li>
+        <li class="navbar__menu-item">
+          <a class="navbar__menu-link" href="#bikes">Виды велосипедов</a>
+        </li>
+        <li class="navbar__menu-item">
+          <a class="navbar__menu-link" href="#media">Видео про велосипеды</a>
+        </li>
+        <li class="navbar__menu-item">
+          <a class="navbar__menu-link" href="#where">Контакты</a>
+        </li>
+      </ul>
+    </div>
   </nav>
+
   <header class="header">
-    <div class="header__banner">
-      <div class="header__text">
-        <a class="header__logo" href="/">
-          <img src="img/logo.svg" width="68" height="20" alt="Логотип">
-        </a>
-        <h1>Мы продаем велосипеды</h1>
-        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+    <div class="container">
+      <div class="header__banner">
+        <div class="header__text">
+          <a class="header__logo" href="/">
+            <img src="img/logo.svg" width="68" height="20" alt="Логотип">
+          </a>
+          <h1>Мы продаем велосипеды</h1>
+          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </div>
+        <form class="header__form" action="https://echo.htmlacademy.ru" method="POST">
+          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <input type="text" name="name" aria-label="Имя" placeholder="Введите Ваше Имя" required="">
+          <input type="tel" name="phone" aria-label="Телефон" placeholder="Введите Ваш номер телефона" required="">
+          <button type="submit">Подобрать велосипед мечты</button>
+        </form>
       </div>
     </div>
-    <form class="header__form" action="https://echo.htmlacademy.ru" method="POST">
-      <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-      <input type="text" name="name" aria-label="Имя" placeholder="Введите Ваше Имя" required="">
-      <input type="tel" name="phone" aria-label="Телефон" placeholder="Введите Ваш номер телефона" required="">
-      <button type="submit">Подобрать велосипед мечты</button>
-    </form>
   </header>
+
   <section class="about" id="about">
-    <h2>Несколько фактов о нас</h2>
-    <ol class="about__facts">
-      <li class="about__fact">
-        <p>Самый широкий выбор велосипедов!</p>
-      </li>
-      <li class="about__fact">
-        <p>Доставка велосипедов по всей России!</p>
-      </li>
-      <li class="about__fact">
-        <p>Большой выбор крутых аксессуаров!</p>
-      </li>
-      <li class="about__fact">
-        <p>Профессиональные консультации!</p>
-      </li>
-    </ol>
-  </section>
-  <section class="bikes" id="bikes">
-    <h2>Виды велосипедов</h2>
-    <div class="bikes__wrapper">
-      <figure class="bikes__andreas">
-        <picture>
-          <source media="(max-width: 767px)" srcset="img/andreas-haimerl-sm.png">
-          <img src="img/andreas-haimerl-lg.png" alt="Дорожный велосипед">
-        </picture>
-        <figcaption>Дорожный велосипед</figcaption>
-      </figure>
-      <figure class="bikes__eberhard">
-        <picture>
-          <source media="(max-width: 767px)" srcset="img/eberhard-grossgasteiger-sm.png">
-          <img src="img/eberhard-grossgasteiger-lg.png" alt="Горный велосипед">
-        </picture>
-        <figcaption>Горный велосипед</figcaption>
-      </figure>
-      <figure class="bikes__roger">
-        <picture>
-          <source media="(max-width: 767px)" srcset="img/roger-goh-sm.png">
-          <img src="img/roger-goh-lg.png" alt="Детский велосипед">
-        </picture>
-        <figcaption>Детский велосипед</figcaption>
-      </figure>
+    <div class="container">
+      <h2>Несколько фактов о нас</h2>
+      <ol class="about__facts">
+        <li class="about__fact">
+          <p>Самый широкий выбор велосипедов!</p>
+        </li>
+        <li class="about__fact">
+          <p>Доставка велосипедов по всей России!</p>
+        </li>
+        <li class="about__fact">
+          <p>Большой выбор крутых аксессуаров!</p>
+        </li>
+        <li class="about__fact">
+          <p>Профессиональные консультации!</p>
+        </li>
+      </ol>
     </div>
   </section>
-  <section class="media" id="media">
-    <div class="media__wrapper">
-      <h2>Видео про велосипеды</h2>
-      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда
-        для себя. </p>
-      <div class="media__video">
-        <img src="./img/josh-nuttall.png" alt="Видео про велосипеды">
-        <span></span>
+
+  <section class="bikes" id="bikes">
+    <div class="container">
+      <h2>Виды велосипедов</h2>
+      <div class="bikes__wrapper">
+        <figure class="bikes__andreas">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/andreas-haimerl-sm.png">
+            <img src="img/andreas-haimerl-lg.png" alt="Дорожный велосипед">
+          </picture>
+          <figcaption>Дорожный велосипед</figcaption>
+        </figure>
+        <figure class="bikes__eberhard">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/eberhard-grossgasteiger-sm.png">
+            <img src="img/eberhard-grossgasteiger-lg.png" alt="Горный велосипед">
+          </picture>
+          <figcaption>Горный велосипед</figcaption>
+        </figure>
+        <figure class="bikes__roger">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/roger-goh-sm.png">
+            <img src="img/roger-goh-lg.png" alt="Детский велосипед">
+          </picture>
+          <figcaption>Детский велосипед</figcaption>
+        </figure>
       </div>
     </div>
   </section>
-  <footer class="footer" id="where">
-    <h2>Как нас найти?</h2>
-    <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19
-    </p>
-    <div class="footer__map-wrapper">
-      <div id="map" class="footer__map" data-lat="59.938635" data-lng="30.323118"></div>
+
+  <section class="media" id="media">
+    <div class="container">
+      <div class="media__wrapper">
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда
+          для себя. </p>
+        <div class="media__video">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/josh-nuttall-xs.png" sizes="288px">
+            <source media="(min-width: 768px, max-width: 1023px)" srcset="img/josh-nuttall-sm.png" sizes="503px">
+            <img src="img/josh-nuttall-lg.png" alt="Видео про велосипеды">
+          </picture>
+          <span></span>
+        </div>
+      </div>
     </div>
-    <div class="footer__contacts">
-      <a class="footer__email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-      <a class="footer__phone" href="tel:+749978468449">+7 (499)-784-684-49</a>
+  </section>
+
+  <footer class="footer" id="where">
+    <div class="container">
+      <h2>Как нас найти?</h2>
+      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19
+      </p>
+      <div class="footer__map-wrapper">
+        <div id="map" class="footer__map" data-lat="59.938635" data-lng="30.323118"></div>
+      </div>
+      <div class="footer__contacts">
+        <a class="footer__email" href="mailto:puteshestviemechta@gmail.ru"><span>puteshestviemechta@gmail.ru</span></a>
+        <a class="footer__phone" href="tel:+749978468449"><span>+7 (499)-784-684-49</span></a>
+      </div>
     </div>
   </footer>
+
   <script src="js/main.js"></script>
 </body>
 

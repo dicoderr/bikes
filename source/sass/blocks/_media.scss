@@ -1,22 +1,26 @@
 .media {
-  margin-bottom: 17vw;
+  margin-bottom: 253px;
 
   background: $color2;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   .media__wrapper {
     position: relative;
-    top: 98px;
+    top: 120px;
 
     display: flex;
     align-items: center;
     flex-direction: column;
 
+    width: 100%;
     margin: 0 auto;
   }
 
   h2 {
     margin-bottom: 20px;
+    margin-left: -9px;
+
+    letter-spacing: -0.005em;
 
     color: $white;
 
@@ -30,6 +34,7 @@
     margin-bottom: 56px;
 
     text-align: center;
+    letter-spacing: -0.005em;
 
     opacity: 0.7;
     color: $white;
@@ -42,9 +47,12 @@
   .media__video {
     position: relative;
 
+    margin-bottom: 15px;
+
+    text-align: center;
+
     img {
-      width: 65vw;
-      height: 36vw;
+      width: 100%;
     }
 
     span {
@@ -58,30 +66,68 @@
       transform: translate(-50%, -50%);
 
       background-image: url("../../img/ic-play.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 
-  @media (max-width: 767px) {
-    margin-bottom: 11vw;
+  @media (max-width: 1023px) {
+    height: 414px;
+    margin-bottom: 157px;
 
     background-color: $color8;
 
     .media__wrapper {
-      top: 11vw;
+      top: 72px;
     }
 
     h2 {
+      margin-left: 0;
+
       font-size: 2.4rem;
+      line-height: 3rem;
     }
 
     p {
       max-width: 429px;
+      margin-bottom: 39px;
     }
 
     .media__video {
       img {
-        min-width: 288px;
-        min-height: 161px;
+        width: 502px;
+        height: 282px;
+      }
+
+      span {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    height: 380px;
+    margin-bottom: 124px;
+    padding-top: 14px;
+
+    h2 {
+      margin-left: -12px;
+    }
+
+    p {
+      margin-bottom: 50px;
+    }
+
+    .media__video {
+      img {
+        width: 288px;
+        height: 162px;
+      }
+
+      span {
+        width: 65px;
+        height: 65px;
       }
     }
   }
