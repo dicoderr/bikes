@@ -3,9 +3,9 @@
   font-weight: 300;
   font-style: normal;
 
-  font-display: swap;
-  src: local("Open Sans Light"), local("OpenSans-Light"), url("../../fonts/OpenSans-Light.ttf") format("ttf");
-  unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
+  font-display: auto;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("Open_Sans-normal-300.woff") format("woff");
+  unicode-range: u+0-10ffff;
 }
 
 @font-face {
@@ -13,9 +13,9 @@
   font-weight: 400;
   font-style: normal;
 
-  font-display: swap;
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../../fonts/OpenSans-Regular.ttf") format("ttf");
-  unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
+  font-display: auto;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("Open_Sans-normal-400.woff") format("woff");
+  unicode-range: u+0-10ffff;
 }
 
 @font-face {
@@ -23,9 +23,9 @@
   font-weight: 600;
   font-style: normal;
 
-  font-display: swap;
-  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("../../fonts/OpenSans-SemiBold.ttf") format("ttf");
-  unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
+  font-display: auto;
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("Open_Sans-normal-600.woff") format("woff");
+  unicode-range: u+0-10ffff;
 }
 
 @font-face {
@@ -33,9 +33,9 @@
   font-weight: 700;
   font-style: normal;
 
-  font-display: swap;
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../../fonts/OpenSans-Bold.ttf") format("ttf");
-  unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
+  font-display: auto;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("Open_Sans-normal-700.woff") format("woff");
+  unicode-range: u+0-10ffff;
 }
 
 @font-face {
@@ -43,9 +43,9 @@
   font-weight: 400;
   font-style: normal;
 
-  font-display: swap;
-  src: local("Overpass Regular"), local("Overpass-Regular"), url("../../fonts/Overpass-Regular.ttf") format("ttf");
-  unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
+  font-display: auto;
+  src: local("Overpass Regular"), local("Overpass-Regular"), url("Overpass-normal-400.woff") format("woff");
+  unicode-range: u+0-10ffff;
 }
 
 @font-face {
@@ -53,9 +53,9 @@
   font-weight: 600;
   font-style: normal;
 
-  font-display: swap;
-  src: local("Overpass SemiBold"), local("Overpass-SemiBold"), url("../../fonts/Overpass-SemiBold.ttf") format("ttf");
-  unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
+  font-display: auto;
+  src: local("Overpass SemiBold"), local("Overpass-SemiBold"), url("Overpass-normal-600.woff") format("woff");
+  unicode-range: u+0-10ffff;
 }
 
 @font-face {
@@ -63,7 +63,7 @@
   font-weight: 700;
   font-style: normal;
 
-  font-display: swap;
-  src: local("Overpass Bold"), local("Overpass-Bold"), url("../../fonts/Overpass-Bold.ttf") format("ttf");
-  unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
+  font-display: auto;
+  src: local("Overpass Bold"), local("Overpass-Bold"), url("Overpass-normal-700.woff") format("woff");
+  unicode-range: u+0-10ffff;
 }

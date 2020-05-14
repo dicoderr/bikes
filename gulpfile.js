@@ -16,6 +16,26 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var surge = require("gulp-surge");
+var googleWebFonts = require("gulp-google-webfonts");
+var soften = require("gulp-soften");
+
+var options = {
+  cssDir: "../sass/base/",
+  cssFilename: "_typography.scss",
+};
+
+gulp.task("webfonts", function () {
+  return gulp.src("./fonts.list")
+    .pipe(googleWebFonts(options))
+    .pipe(gulp.dest("./source/fonts"))
+    ;
+});
+
+gulp.task('soften', function () {
+  return gulp.src('./source/sass/base/_typography.scss')
+    .pipe(soften(2))
+    .pipe(gulp.dest('./source/sass/base'));
+});
 
 gulp.task("css", function () {
   return gulp
@@ -125,3 +145,4 @@ gulp.task("surge", function () {
 gulp.task("build", gulp.series("clean", "copy", "copycss", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
 gulp.task("deploy", gulp.series("build", "surge"));
+gulp.task("fonts", gulp.series("webfonts", "soften"));
