@@ -6,14 +6,14 @@
   padding-top: 172px;
   padding-bottom: 175px;
 
-  background-color: $color3;
+  background-color: $color-alice-blue;
 
   h2 {
     margin-bottom: 57px;
 
     text-align: center;
 
-    color: $color1;
+    color: $color-nero;
 
     font-size: 3rem;
     font-weight: 600;
@@ -42,7 +42,7 @@
     text-align: center;
     letter-spacing: -0.5px;
 
-    color: $black;
+    color: $color-black;
 
     font-size: 2.2rem;
     font-weight: 600;
@@ -72,7 +72,7 @@
     content: "";
     transform: translate(-60px, -160%);
 
-    border: 27px solid $color2;
+    border: 27px solid $color-turquoise;
     border-radius: 50%;
   }
 }
@@ -93,7 +93,7 @@
 
     content: "";
 
-    background-color: $black;
+    background-color: $color-black;
   }
 
   &::after {
@@ -107,7 +107,7 @@
 
     content: "";
 
-    border: 8px solid $color2;
+    border: 8px solid $color-turquoise;
   }
 }
 
@@ -128,7 +128,7 @@
     content: "";
     transform: translateX(-60px);
 
-    border: 17px solid $color2;
+    border: 17px solid $color-turquoise;
     border-radius: 50%;
   }
 }

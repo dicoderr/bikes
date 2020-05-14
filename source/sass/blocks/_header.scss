@@ -6,7 +6,7 @@
   max-height: 825px;
   padding-top: 318px;
 
-  background: $color4 url("../img/bike.jpg") no-repeat center;
+  background: $color-light-gray url("../img/bike.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -35,7 +35,7 @@
 
     letter-spacing: -0.005em;
 
-    color: $white;
+    color: $color-white;
 
     font-size: 4.6rem;
     line-height: 6.4rem;
@@ -75,7 +75,7 @@
     text-align: center;
     letter-spacing: -0.005em;
 
-    color: $white;
+    color: $color-white;
 
     font-size: 1.7rem;
     font-weight: 600;
@@ -89,7 +89,7 @@
     margin-bottom: 20px;
     padding-left: 29px;
 
-    border: 1px solid $color5;
+    border: 1px solid $color-gray;
     border-radius: 4px;
 
     font-size: 1.5rem;
@@ -102,7 +102,7 @@
 
     border: none;
     border-radius: 6px;
-    background-color: $color2;
+    background-color: $color-turquoise;
 
     font-family: "Overpass", sans-serif;
     font-size: 1.5rem;
