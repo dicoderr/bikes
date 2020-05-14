@@ -20,17 +20,6 @@
     line-height: 3rem;
   }
 
-  .bikes__wrapper {
-    position: relative;
-    left: 12px;
-
-    display: flex;
-    justify-content: space-between;
-
-    width: 96.57%;
-    margin: 0 auto;
-  }
-
   figure {
     position: relative;
 
@@ -59,80 +48,93 @@
     font-weight: 600;
     line-height: 3.4rem;
   }
+}
 
-  .bikes__andreas picture {
-    &::before {
-      position: absolute;
-      bottom: 0;
+.bikes__wrapper {
+  position: relative;
+  left: 12px;
 
-      width: 180px;
-      height: 180px;
+  display: flex;
+  justify-content: space-between;
 
-      content: "";
-      transform: translate(-60px, -160%);
+  width: 96.57%;
+  margin: 0 auto;
+}
 
-      border: 27px solid $color2;
-      border-radius: 50%;
-    }
+.bikes__andreas picture {
+  &::before {
+    position: absolute;
+    bottom: 0;
+
+    width: 180px;
+    height: 180px;
+
+    content: "";
+    transform: translate(-60px, -160%);
+
+    border: 27px solid $color2;
+    border-radius: 50%;
+  }
+}
+
+.bikes__eberhard {
+  top: 29px;
+}
+
+.bikes__eberhard picture {
+  &::before {
+    position: absolute;
+    z-index: 11;
+    top: -13px;
+    left: -15px;
+
+    width: 37px;
+    height: 37px;
+
+    content: "";
+
+    background-color: $black;
   }
 
-  .bikes__eberhard {
-    top: 29px;
+  &::after {
+    position: absolute;
+    z-index: 11;
+    right: -22px;
+    bottom: 32px;
+
+    width: 47px;
+    height: 47px;
+
+    content: "";
+
+    border: 8px solid $color2;
   }
+}
 
-  .bikes__eberhard picture {
-    &::before {
-      position: absolute;
-      z-index: 11;
-      top: -13px;
-      left: -15px;
+.bikes__roger {
+  top: -9px;
+}
 
-      width: 37px;
-      height: 37px;
+.bikes__roger picture {
+  &::before {
+    position: absolute;
+    z-index: 11;
+    top: -33px;
+    right: -95px;
 
-      content: "";
+    width: 95px;
+    height: 95px;
 
-      background-color: $black;
-    }
+    content: "";
+    transform: translateX(-60px);
 
-    &::after {
-      position: absolute;
-      z-index: 11;
-      right: -22px;
-      bottom: 32px;
-
-      width: 47px;
-      height: 47px;
-
-      content: "";
-
-      border: 8px solid $color2;
-    }
+    border: 17px solid $color2;
+    border-radius: 50%;
   }
+}
 
-  .bikes__roger {
-    top: -9px;
-  }
-
-  .bikes__roger picture {
-    &::before {
-      position: absolute;
-      z-index: 11;
-      top: -33px;
-      right: -95px;
-
-      width: 95px;
-      height: 95px;
-
-      content: "";
-      transform: translateX(-60px);
-
-      border: 17px solid $color2;
-      border-radius: 50%;
-    }
-  }
-
-  @media (max-width: 1023px) {
+@media (max-width: 1023px) {
+  .bikes {
     padding-top: 50px;
     padding-bottom: 0;
 
@@ -141,17 +143,6 @@
 
       font-size: 2.4rem;
       line-height: 4.1rem;
-    }
-
-    .bikes__wrapper {
-      left: 0;
-
-      flex-wrap: wrap;
-      justify-content: space-around;
-
-      width: 91.53%;
-
-      justify-items: center;
     }
 
     figure {
@@ -164,43 +155,56 @@
         margin-right: 0;
       }
     }
+  }
 
-    .bikes__andreas picture {
-      &::before {
-        width: 127px;
-        height: 127px;
+  .bikes__wrapper {
+    left: 0;
 
-        transform: translate(-38px, -28px);
+    flex-wrap: wrap;
+    justify-content: space-around;
 
-        border-width: 18px;
-      }
-    }
+    width: 91.53%;
 
-    .bikes__eberhard {
-      top: 0;
-    }
+    justify-items: center;
+  }
 
-    .bikes__eberhard picture {
-      &::before,
-      &::after {
-        display: none;
-      }
-    }
+  .bikes__andreas picture {
+    &::before {
+      width: 127px;
+      height: 127px;
 
-    .bikes__roger picture {
-      &::before {
-        top: -21px;
-        right: -75px;
+      transform: translate(-38px, -28px);
 
-        width: 68px;
-        height: 68px;
-
-        border-width: 13px;
-      }
+      border-width: 18px;
     }
   }
 
-  @media (max-width: 767px) {
+  .bikes__eberhard {
+    top: 0;
+  }
+
+  .bikes__eberhard picture {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .bikes__roger picture {
+    &::before {
+      top: -21px;
+      right: -75px;
+
+      width: 68px;
+      height: 68px;
+
+      border-width: 13px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .bikes {
     margin-bottom: 17px;
     padding-top: 22px;
 
@@ -211,10 +215,6 @@
       line-height: 4.1rem;
     }
 
-    .bikes__wrapper {
-      width: 100%;
-    }
-
     figure {
       width: 100%;
       margin-bottom: 39px;
@@ -223,21 +223,25 @@
     img {
       margin-bottom: 16px;
     }
+  }
 
-    .bikes__andreas picture {
-      &::before {
-        transform: translate(-23px, -31px);
-      }
+  .bikes__wrapper {
+    width: 100%;
+  }
+
+  .bikes__andreas picture {
+    &::before {
+      transform: translate(-23px, -31px);
     }
+  }
 
-    .bikes__roger {
-      top: 3px;
-    }
+  .bikes__roger {
+    top: 3px;
+  }
 
-    .bikes__roger picture {
-      &::before {
-        right: -65px;
-      }
+  .bikes__roger picture {
+    &::before {
+      right: -65px;
     }
   }
 }

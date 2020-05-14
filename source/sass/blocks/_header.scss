@@ -8,217 +8,221 @@
 
   background: $color4 url("../img/bike.jpg") no-repeat center;
   background-size: cover;
+}
 
-  .header__banner {
-    display: flex;
-    justify-content: space-between;
+.header__banner {
+  display: flex;
+  justify-content: space-between;
 
-    width: 75.38%;
-    max-width: 880px;
-    margin: 0 auto;
-  }
+  width: 75.38%;
+  max-width: 880px;
+  margin: 0 auto;
+}
 
-  .header__text {
-    position: relative;
+.header__text {
+  position: relative;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    width: 44.71%;
-    padding-top: 52px;
+  width: 44.71%;
+  padding-top: 52px;
 
-    h1 {
-      z-index: 1;
-
-      margin-bottom: 24px;
-
-      letter-spacing: -0.005em;
-
-      color: $white;
-
-      font-size: 4.6rem;
-      line-height: 6.4rem;
-    }
-
-    p {
-      z-index: 1;
-
-      letter-spacing: -0.005em;
-
-      color: rgba(255, 255, 255, 0.8);
-
-      font-size: 2rem;
-      font-weight: 300;
-      line-height: 3.2rem;
-    }
-  }
-
-  .header__logo {
-    position: absolute;
+  h1 {
     z-index: 1;
-    top: 0;
-    left: -2px;
+
+    margin-bottom: 24px;
+
+    letter-spacing: -0.005em;
+
+    color: $white;
+
+    font-size: 4.6rem;
+    line-height: 6.4rem;
   }
 
-  .header__form {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
+  p {
+    z-index: 1;
 
-    width: 37.16%;
-    padding-top: 5px;
+    letter-spacing: -0.005em;
 
-    p {
-      margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
 
-      text-align: center;
-      letter-spacing: -0.005em;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3.2rem;
+  }
+}
 
-      color: $white;
+.header__logo {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -2px;
+}
 
-      font-size: 1.7rem;
-      font-weight: 600;
-      line-height: 2.8rem;
-    }
+.header__form {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
 
-    input[type="text"],
-    input[type="tel"] {
-      width: 100%;
-      height: 48px;
-      margin-bottom: 20px;
-      padding-left: 29px;
+  width: 37.16%;
+  padding-top: 5px;
 
-      border: 1px solid $color5;
-      border-radius: 4px;
+  p {
+    margin-bottom: 20px;
 
-      font-size: 1.5rem;
-      line-height: 2.4rem;
-    }
+    text-align: center;
+    letter-spacing: -0.005em;
 
-    button {
-      width: 100%;
-      height: 51px;
+    color: $white;
 
-      border: none;
-      border-radius: 6px;
-      background-color: $color2;
-
-      font-family: "Overpass", sans-serif;
-      font-size: 1.5rem;
-      font-weight: 600;
-      line-height: 1.4rem;
-    }
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 2.8rem;
   }
 
-  @media (max-width: 1023px) {
+  input[type="text"],
+  input[type="tel"] {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 20px;
+    padding-left: 29px;
+
+    border: 1px solid $color5;
+    border-radius: 4px;
+
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
+  button {
+    width: 100%;
+    height: 51px;
+
+    border: none;
+    border-radius: 6px;
+    background-color: $color2;
+
+    font-family: "Overpass", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header {
     height: 340px;
     margin-bottom: 413px;
     padding-top: 0;
 
     background-position: 0 -50px;
     background-size: cover;
+  }
 
-    .header__banner {
-      align-items: center;
-      flex-direction: column;
+  .header__banner {
+    align-items: center;
+    flex-direction: column;
 
-      padding-top: 85px;
+    padding-top: 85px;
+  }
+
+  .header__text {
+    position: static;
+
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 146px;
+
+    text-align: center;
+
+    h1 {
+      margin-bottom: 19px;
+
+      font-size: 3rem;
+      line-height: 4.2rem;
     }
 
-    .header__text {
-      position: static;
-
-      align-items: center;
-
-      width: 100%;
-      margin-bottom: 146px;
-
-      text-align: center;
-
-      h1 {
-        margin-bottom: 19px;
-
-        font-size: 3rem;
-        line-height: 4.2rem;
-      }
-
-      p {
-        max-width: 435px;
-      }
-    }
-
-    .header__form {
-      width: 62%;
-
-      p {
-        max-width: none;
-        margin-bottom: 29px;
-
-        letter-spacing: 0.7px;
-
-        color: #000000;
-      }
-
-      input[type="text"],
-      input[type="tel"] {
-        padding-left: 19px;
-      }
-    }
-
-    .header__logo {
-      top: 25px;
-      left: 21px;
+    p {
+      max-width: 435px;
     }
   }
 
-  @media (max-width: 767px) {
+  .header__form {
+    width: 62%;
+
+    p {
+      max-width: none;
+      margin-bottom: 29px;
+
+      letter-spacing: 0.7px;
+
+      color: #000000;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+      padding-left: 19px;
+    }
+  }
+
+  .header__logo {
+    top: 25px;
+    left: 21px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
     height: 390px;
 
     background-position: center;
     background-size: cover;
+  }
 
-    .header__banner {
-      width: 100%;
-      padding-top: 71px;
+  .header__banner {
+    width: 100%;
+    padding-top: 71px;
+  }
+
+  .header__text {
+    max-width: 350px;
+    margin-bottom: 135px;
+
+    p {
+      max-width: none;
+
+      font-size: 1.8rem;
+    }
+  }
+
+  .header__logo {
+    left: 17px;
+  }
+
+  .header__form {
+    width: 100%;
+    max-width: 450px;
+
+    p {
+      margin-bottom: 19px;
+
+      letter-spacing: 0;
+
+      font-size: 1.8rem;
+      line-height: 2.8rem;
     }
 
-    .header__text {
-      max-width: 350px;
-      margin-bottom: 135px;
-
-      p {
-        max-width: none;
-
-        font-size: 1.8rem;
-      }
+    input[type="text"],
+    input[type="tel"] {
+      padding-top: 4px;
+      padding-left: 26px;
     }
 
-    .header__logo {
-      left: 17px;
-    }
-
-    .header__form {
-      width: 100%;
-      max-width: 450px;
-
-      p {
-        margin-bottom: 19px;
-
-        letter-spacing: 0;
-
-        font-size: 1.8rem;
-        line-height: 2.8rem;
-      }
-
-      input[type="text"],
-      input[type="tel"] {
-        padding-top: 4px;
-        padding-left: 26px;
-      }
-
-      button {
-        padding-top: 2px;
-      }
+    button {
+      padding-top: 2px;
     }
   }
 }

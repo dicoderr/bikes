@@ -4,18 +4,6 @@
   background: $color2;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
-  .media__wrapper {
-    position: relative;
-    top: 120px;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    width: 100%;
-    margin: 0 auto;
-  }
-
   h2 {
     margin-bottom: 20px;
     margin-left: -9px;
@@ -43,43 +31,53 @@
     font-weight: 300;
     line-height: 2.8rem;
   }
+}
 
-  .media__video {
-    position: relative;
+.media__wrapper {
+  position: relative;
+  top: 120px;
 
-    margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-    text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
 
-    img {
-      width: 100%;
-    }
+.media__video {
+  position: relative;
 
-    span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
+  margin-bottom: 15px;
 
-      width: 65px;
-      height: 65px;
+  text-align: center;
 
-      transform: translate(-50%, -50%);
-
-      background-image: url("../../img/ic-play.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+  img {
+    width: 100%;
   }
 
-  @media (max-width: 1023px) {
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 65px;
+    height: 65px;
+
+    transform: translate(-50%, -50%);
+
+    background-image: url("../../img/ic-play.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1023px) {
+  .media {
     height: 414px;
     margin-bottom: 157px;
 
     background-color: $color8;
-
-    .media__wrapper {
-      top: 72px;
-    }
 
     h2 {
       margin-left: 0;
@@ -92,21 +90,27 @@
       max-width: 429px;
       margin-bottom: 39px;
     }
-
-    .media__video {
-      img {
-        width: 502px;
-        height: 282px;
-      }
-
-      span {
-        width: 90px;
-        height: 90px;
-      }
-    }
   }
 
-  @media (max-width: 767px) {
+  .media__wrapper {
+    top: 72px;
+  }
+
+  .media__video {
+    img {
+      width: 502px;
+      height: 282px;
+    }
+
+    span {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .media {
     height: 380px;
     margin-bottom: 124px;
     padding-top: 14px;
@@ -118,17 +122,17 @@
     p {
       margin-bottom: 50px;
     }
+  }
 
-    .media__video {
-      img {
-        width: 288px;
-        height: 162px;
-      }
+  .media__video {
+    img {
+      width: 288px;
+      height: 162px;
+    }
 
-      span {
-        width: 65px;
-        height: 65px;
-      }
+    span {
+      width: 65px;
+      height: 65px;
     }
   }
 }
