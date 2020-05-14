@@ -55,7 +55,7 @@
   unicode-range: u+0-10ffff; }
 
 :root {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 10px; }
 
 *,
@@ -275,7 +275,7 @@ body {
     border: none;
     border-radius: 6px;
     background-color: #0ad9c6;
-    font-family: "Overpass", sans-serif;
+    font-family: "Overpass", Arial, sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.4rem; }
@@ -415,7 +415,7 @@ body {
 @media (max-width: 767px) {
   .about {
     padding-top: 20px;
-    font-family: "Overpass", sans-serif; }
+    font-family: "Overpass", Arial, sans-serif; }
     .about h2 {
       margin-bottom: 30px; }
   .about__facts {
