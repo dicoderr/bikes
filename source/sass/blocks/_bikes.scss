@@ -133,7 +133,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $breakpoint-tablet) {
   .bikes {
     padding-top: 50px;
     padding-bottom: 0;
@@ -203,7 +203,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   .bikes {
     margin-bottom: 17px;
     padding-top: 22px;

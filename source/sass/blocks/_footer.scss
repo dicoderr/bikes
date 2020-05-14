@@ -96,7 +96,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $breakpoint-tablet) {
   .footer {
     h2 {
       margin-bottom: 20px;
@@ -128,7 +128,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   .container {
     padding: 0;
   }

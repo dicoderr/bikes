@@ -59,7 +59,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $breakpoint-tablet) {
   .about {
     padding-top: 0;
     padding-bottom: 27px;
@@ -96,7 +96,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   .about {
     padding-top: 20px;
 

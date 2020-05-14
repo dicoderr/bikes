@@ -111,7 +111,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $breakpoint-tablet) {
   .header {
     height: 340px;
     margin-bottom: 413px;
@@ -174,7 +174,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-mobile) {
   .header {
     height: 390px;
 

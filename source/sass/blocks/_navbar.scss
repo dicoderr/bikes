@@ -37,7 +37,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $breakpoint-tablet) {
   .navbar__menu {
     position: absolute;
     top: 0;
