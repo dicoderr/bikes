@@ -147,7 +147,7 @@
     }
 
     figure {
-      width: 45.76%;
+      width: 42.16%;
       margin-bottom: 57px;
 
       text-align: center;
@@ -206,8 +206,8 @@
 
 @media (max-width: $breakpoint-mobile) {
   .bikes {
-    margin-bottom: 17px;
     padding-top: 22px;
+    padding-bottom: 21px;
 
     h2 {
       margin-bottom: 29px;
@@ -217,7 +217,7 @@
     }
 
     figure {
-      width: 100%;
+      width: 84%;
       margin-bottom: 39px;
     }
 
@@ -232,17 +232,18 @@
 
   .bikes__andreas picture {
     &::before {
-      transform: translate(-23px, -31px);
+      transform: translate(-24px, -28px);
     }
   }
 
   .bikes__roger {
-    top: 3px;
+    top: 6px;
   }
 
   .bikes__roger picture {
     &::before {
-      right: -65px;
+      top: -17px;
+      right: -75px;
     }
   }
 }
