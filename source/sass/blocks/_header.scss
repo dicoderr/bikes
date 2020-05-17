@@ -6,7 +6,7 @@
   max-height: 825px;
   padding-top: 318px;
 
-  background: $color-light-gray url("../img/bike.jpg") no-repeat center;
+  background: $color-light-gray url("../img/bike.png") no-repeat center;
   background-size: cover;
 }
 
@@ -117,6 +117,12 @@
     &:hover {
       transform: scale(1.02) translateY(2px);
     }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  header {
+    background: $color-light-gray url("../img/bike@2x.png") no-repeat center;
   }
 }
 
