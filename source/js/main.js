@@ -1,18 +1,19 @@
 'use strict';
 var burger = document.querySelector('.navbar__burger');
 var navbar = document.querySelector('.navbar');
+var menuLinks = document.querySelectorAll('.navbar__menu-link');
 
 if (burger && navbar) {
   burger.addEventListener('click', function () {
     navbar.classList.toggle('shown');
   });
-  var menuLinks = document.querySelectorAll('.navbar__menu-link');
-  menuLinks.forEach(function (link) {
-    link.addEventListener('click', function () {
-      navbar.classList.remove('shown');
-    });
-  });
 }
+
+menuLinks.forEach(function (link) {
+  link.addEventListener('click', function () {
+    navbar.classList.remove('shown');
+  });
+});
 
 function init() {
   var map = document.getElementById('map');
