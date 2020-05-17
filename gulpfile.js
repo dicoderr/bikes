@@ -51,6 +51,15 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("copyjs", function () {
+  return gulp
+    .src([
+      "node_modules/cleave.js/dist/cleave.min.js",
+      "node_modules/cleave.js/dist/addons/cleave-phone.ru.js",
+    ])
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("copycss", function () {
   return gulp
     .src("source/sass/style.scss")
@@ -142,7 +151,8 @@ gulp.task("surge", function () {
   });
 });
 
-gulp.task("build", gulp.series("clean", "copy", "copycss", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "copycss", "copyjs", "css",
+  "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
 gulp.task("deploy", gulp.series("build", "surge"));
 gulp.task("fonts", gulp.series("webfonts", "soften"));

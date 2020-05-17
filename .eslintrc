@@ -7,6 +7,15 @@
     "htmlacademy/es5"
   ],
   "globals": {
-    "ymaps": true
+    "ymaps": true,
+    "Cleave": true
+  },
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "cleave"
+      }
+    ]
   }
 }

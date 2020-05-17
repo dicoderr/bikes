@@ -29,4 +29,9 @@ function init() {
   });
 }
 
+var cleave = new Cleave('.header__form input[type=tel]', {
+  phone: true,
+  phoneRegionCode: 'RU',
+});
+
 ymaps.ready(init);
