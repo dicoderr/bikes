@@ -117,7 +117,7 @@
     background-color: $color-turquoise;
   }
 
-  .navbar__burger span {
+  .navbar__burger i {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -162,7 +162,7 @@
       background-color: $color-white;
     }
 
-    .navbar__burger span {
+    .navbar__burger i {
       border: none;
 
       &::before {

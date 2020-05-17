@@ -1,3 +1,10 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
 @font-face {
   font-family: "Open Sans";
   font-weight: 300;
@@ -167,7 +174,7 @@ body {
     border: none;
     outline: none;
     background-color: #0ad9c6; }
-  .navbar__burger span {
+  .navbar__burger i {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -175,29 +182,29 @@ body {
     height: 1px;
     transform: translate(-50%, -50%);
     border: 1px solid black; }
-    .navbar__burger span::before, .navbar__burger span::after {
+    .navbar__burger i::before, .navbar__burger i::after {
       position: absolute;
       left: -1px;
       display: block;
       width: 22.5px;
       content: "";
       border: 1px solid black; }
-    .navbar__burger span::before {
+    .navbar__burger i::before {
       top: -9px; }
-    .navbar__burger span::after {
+    .navbar__burger i::after {
       top: 7px; }
   .navbar.shown .navbar__menu {
     display: flex; }
   .navbar.shown .navbar__burger {
     opacity: 0.2;
     background-color: #ffffff; }
-  .navbar.shown .navbar__burger span {
+  .navbar.shown .navbar__burger i {
     border: none; }
-    .navbar.shown .navbar__burger span::before {
+    .navbar.shown .navbar__burger i::before {
       top: 0;
       transform: rotate(45deg);
       border: 1px solid #141517; }
-    .navbar.shown .navbar__burger span::after {
+    .navbar.shown .navbar__burger i::after {
       top: 0;
       transform: rotate(-45deg);
       border: 1px solid #141517; } }
