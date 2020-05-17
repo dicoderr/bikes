@@ -97,8 +97,13 @@
   }
 
   button {
+    position: relative;
+
     width: 100%;
     height: 51px;
+
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
 
     border: none;
     border-radius: 6px;
@@ -108,6 +113,10 @@
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.4rem;
+
+    &:hover {
+      transform: scale(1.02) translateY(2px);
+    }
   }
 }
 

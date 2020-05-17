@@ -28,12 +28,23 @@
 }
 
 .navbar__menu-item {
+  position: relative;
+
+  transition: all 200ms ease;
   letter-spacing: -0.005em;
 
   opacity: 0.7;
 
   &:not(:last-child) {
     margin-right: 11.57%;
+  }
+
+  &:hover {
+    top: -1px;
+    left: -1px;
+
+    opacity: 1;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.05);
   }
 }
 
