@@ -76,6 +76,10 @@
   &:hover {
     transform: translate(-50%, -50%) scale(1.2) rotate(360deg);
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 @media (max-width: $breakpoint-tablet) {

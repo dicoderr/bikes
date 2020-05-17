@@ -51,6 +51,10 @@
   }
 }
 
+.navbar__menu-link:focus {
+  outline: none;
+}
+
 @media (max-width: $breakpoint-tablet) {
   .navbar__menu {
     position: absolute;

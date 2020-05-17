@@ -91,6 +91,7 @@
 
     border: 1px solid $color-gray;
     border-radius: 4px;
+    outline: none;
 
     font-size: 1.5rem;
     line-height: 2.4rem;
@@ -117,10 +118,14 @@
     &:hover {
       transform: scale(1.02) translateY(2px);
     }
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (min-resolution: 192dpi) {
   header {
     background: $color-light-gray url("../img/bike@2x.png") no-repeat center;
   }
