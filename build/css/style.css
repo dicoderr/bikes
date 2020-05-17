@@ -634,16 +634,18 @@ body {
   text-align: center; }
   .media__video img {
     width: 100%; }
-  .media__video span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 65px;
-    height: 65px;
-    transform: translate(-50%, -50%);
-    background-image: url("../../img/ic-play.svg");
-    background-repeat: no-repeat;
-    background-size: cover; }
+
+.media__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65px;
+  height: 65px;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  background-image: url("../../img/ic-play.svg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 @media (max-width: 1023px) {
   .media {
@@ -662,7 +664,7 @@ body {
   .media__video img {
     width: 502px;
     height: 282px; }
-  .media__video span {
+  .media__play {
     width: 90px;
     height: 90px; } }
 
@@ -678,7 +680,7 @@ body {
   .media__video img {
     width: 288px;
     height: 162px; }
-  .media__video span {
+  .media__play {
     width: 65px;
     height: 65px; } }
 

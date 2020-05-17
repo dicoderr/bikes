@@ -55,21 +55,22 @@
   img {
     width: 100%;
   }
+}
 
-  span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.media__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-    width: 65px;
-    height: 65px;
+  width: 65px;
+  height: 65px;
 
-    transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 
-    background-image: url("../../img/ic-play.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  background-color: transparent;
+  background-image: url("../../img/ic-play.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: $breakpoint-tablet) {
@@ -101,11 +102,11 @@
       width: 502px;
       height: 282px;
     }
+  }
 
-    span {
-      width: 90px;
-      height: 90px;
-    }
+  .media__play {
+    width: 90px;
+    height: 90px;
   }
 }
 
@@ -129,10 +130,10 @@
       width: 288px;
       height: 162px;
     }
+  }
 
-    span {
-      width: 65px;
-      height: 65px;
-    }
+  .media__play {
+    width: 65px;
+    height: 65px;
   }
 }
