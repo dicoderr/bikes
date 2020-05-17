@@ -9,7 +9,7 @@ if (burger && navbar) {
   });
 }
 
-menuLinks.forEach(function (link) {
+Array.prototype.slice.call(menuLinks).forEach(function (link) {
   link.addEventListener('click', function () {
     navbar.classList.remove('shown');
   });

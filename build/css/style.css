@@ -511,6 +511,7 @@ body {
   position: relative;
   left: 12px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 96.57%;
   margin: 0 auto; }
