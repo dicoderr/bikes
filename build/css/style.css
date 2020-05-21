@@ -280,6 +280,7 @@ body {
   width: 37.16%;
   padding-top: 5px; }
   .header__form p {
+    width: 100%;
     margin-bottom: 20px;
     text-align: center;
     letter-spacing: -0.005em;
@@ -408,6 +409,7 @@ body {
 .about__facts {
   display: flex;
   justify-content: center;
+  width: 100%;
   counter-reset: item; }
 
 .about__fact {
@@ -418,6 +420,8 @@ body {
   text-align: center;
   font-size: 2.2rem;
   line-height: 3.4rem; }
+  .about__fact p {
+    width: 100%; }
   .about__fact:not(:last-child) {
     margin-right: 38px; }
   .about__fact::before {

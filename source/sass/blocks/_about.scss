@@ -25,6 +25,8 @@
   display: flex;
   justify-content: center;
 
+  width: 100%;
+
   counter-reset: item;
 }
 
@@ -39,6 +41,10 @@
 
   font-size: 2.2rem;
   line-height: 3.4rem;
+
+  p {
+    width: 100%;
+  }
 
   &:not(:last-child) {
     margin-right: 38px;
