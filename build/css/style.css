@@ -100,6 +100,9 @@ body {
   width: 100vw;
   color: #ffffff; }
 
+.navbar__checkbox {
+  visibility: hidden; }
+
 .navbar__burger {
   display: none; }
 
@@ -206,18 +209,23 @@ body {
       top: -9px; }
     .navbar__burger i::after {
       top: 7px; }
-  .navbar.shown .navbar__menu {
+  .navbar.shown .navbar__menu,
+  .navbar__checkbox:checked ~ .navbar__menu {
     display: flex; }
-  .navbar.shown .navbar__burger {
+  .navbar.shown .navbar__burger,
+  .navbar__checkbox:checked ~ .navbar__burger {
     opacity: 0.2;
     background-color: #ffffff; }
-  .navbar.shown .navbar__burger i {
+  .navbar.shown .navbar__burger i,
+  .navbar__checkbox:checked ~ .navbar__burger i {
     border: none; }
-    .navbar.shown .navbar__burger i::before {
+    .navbar.shown .navbar__burger i::before,
+    .navbar__checkbox:checked ~ .navbar__burger i::before {
       top: 0;
       transform: rotate(45deg);
       border: 1px solid #141517; }
-    .navbar.shown .navbar__burger i::after {
+    .navbar.shown .navbar__burger i::after,
+    .navbar__checkbox:checked ~ .navbar__burger i::after {
       top: 0;
       transform: rotate(-45deg);
       border: 1px solid #141517; } }
@@ -358,6 +366,7 @@ body {
     width: 100%;
     padding-top: 71px; }
   .header__text {
+    width: 95%;
     max-width: 350px;
     margin-bottom: 135px; }
     .header__text p {
@@ -366,7 +375,7 @@ body {
   .header__logo {
     left: 17px; }
   .header__form {
-    width: 100%;
+    width: 90%;
     max-width: 450px; }
     .header__form p {
       margin-bottom: 19px;
@@ -452,7 +461,7 @@ body {
       margin-bottom: 30px; }
   .about__facts {
     justify-content: center;
-    width: 100%;
+    width: 90%;
     margin-bottom: 84px; }
   .about__fact {
     width: 100%;
@@ -602,25 +611,26 @@ body {
 
 @media (max-width: 767px) {
   .bikes {
-    margin-bottom: 17px;
-    padding-top: 22px; }
+    padding-top: 22px;
+    padding-bottom: 21px; }
     .bikes h2 {
       margin-bottom: 29px;
       font-size: 2.4rem;
       line-height: 4.1rem; }
     .bikes figure {
-      width: 100%;
+      width: 84%;
       margin-bottom: 39px; }
     .bikes img {
       margin-bottom: 16px; }
   .bikes__wrapper {
     width: 100%; }
   .bikes__andreas picture::before {
-    transform: translate(-23px, -31px); }
+    transform: translate(-24px, -28px); }
   .bikes__roger {
-    top: 3px; }
+    top: 6px; }
   .bikes__roger picture::before {
-    right: -65px; } }
+    top: -17px;
+    right: -75px; } }
 
 .media {
   margin-bottom: 253px;
@@ -708,6 +718,8 @@ body {
       margin-left: -12px; }
     .media p {
       margin-bottom: 50px; }
+  .media__wrapper {
+    width: 90%; }
   .media__video img {
     width: 288px;
     height: 162px; }
@@ -810,6 +822,8 @@ body {
   .footer h2 {
     font-size: 1.8rem;
     line-height: 3rem; }
+  .footer p {
+    width: 80%; }
   .footer__map-wrapper {
     margin-bottom: 32px; }
   .footer__map {
@@ -821,7 +835,7 @@ body {
     width: 100%;
     padding: 0; }
     .footer__contacts .footer__email {
-      width: 259px;
+      width: 266px;
       margin-bottom: 20px; }
     .footer__contacts .footer__phone::before {
       top: -3px;
