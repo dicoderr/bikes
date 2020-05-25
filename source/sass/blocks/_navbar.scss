@@ -2,12 +2,14 @@
   position: absolute;
   z-index: 12;
 
-  width: 100vw;
+  width: 100%;
 
   color: $color-white;
 }
 
 .navbar__checkbox {
+  position: absolute;
+
   visibility: hidden;
 }
 
