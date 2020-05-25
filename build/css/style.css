@@ -10,7 +10,7 @@
   font-weight: 300;
   font-style: normal;
   font-display: auto;
-  src: local("Open Sans Light"), local("OpenSans-Light"), url("../../fonts/Open_Sans-normal-300.woff") format("woff");
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/Open_Sans-normal-300.woff") format("woff");
   unicode-range: u+0-10ffff; }
 
 @font-face {
@@ -18,7 +18,7 @@
   font-weight: 400;
   font-style: normal;
   font-display: auto;
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../../fonts/Open_Sans-normal-400.woff") format("woff");
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/Open_Sans-normal-400.woff") format("woff");
   unicode-range: u+0-10ffff; }
 
 @font-face {
@@ -26,7 +26,7 @@
   font-weight: 600;
   font-style: normal;
   font-display: auto;
-  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("../../fonts/Open_Sans-normal-600.woff") format("woff");
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("../fonts/Open_Sans-normal-600.woff") format("woff");
   unicode-range: u+0-10ffff; }
 
 @font-face {
@@ -34,7 +34,7 @@
   font-weight: 700;
   font-style: normal;
   font-display: auto;
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../../fonts/Open_Sans-normal-700.woff") format("woff");
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/Open_Sans-normal-700.woff") format("woff");
   unicode-range: u+0-10ffff; }
 
 @font-face {
@@ -42,7 +42,7 @@
   font-weight: 400;
   font-style: normal;
   font-display: auto;
-  src: local("Overpass Regular"), local("Overpass-Regular"), url("../../fonts/Overpass-normal-400.woff") format("woff");
+  src: local("Overpass Regular"), local("Overpass-Regular"), url("../fonts/Overpass-normal-400.woff") format("woff");
   unicode-range: u+0-10ffff; }
 
 @font-face {
@@ -50,7 +50,7 @@
   font-weight: 600;
   font-style: normal;
   font-display: auto;
-  src: local("Overpass SemiBold"), local("Overpass-SemiBold"), url("../../fonts/Overpass-normal-600.woff") format("woff");
+  src: local("Overpass SemiBold"), local("Overpass-SemiBold"), url("../fonts/Overpass-normal-600.woff") format("woff");
   unicode-range: u+0-10ffff; }
 
 @font-face {
@@ -58,7 +58,7 @@
   font-weight: 700;
   font-style: normal;
   font-display: auto;
-  src: local("Overpass Bold"), local("Overpass-Bold"), url("../../fonts/Overpass-normal-700.woff") format("woff");
+  src: local("Overpass Bold"), local("Overpass-Bold"), url("../fonts/Overpass-normal-700.woff") format("woff");
   unicode-range: u+0-10ffff; }
 
 :root {
