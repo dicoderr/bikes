@@ -53,10 +53,7 @@ gulp.task("css", function () {
 
 gulp.task("copyjs", function () {
   return gulp
-    .src([
-      "node_modules/cleave.js/dist/cleave.min.js",
-      "node_modules/cleave.js/dist/addons/cleave-phone.ru.js",
-    ])
+    .src("node_modules/imask/dist/imask.min.js")
     .pipe(gulp.dest("build/js"));
 });
 

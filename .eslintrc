@@ -8,13 +8,13 @@
   ],
   "globals": {
     "ymaps": true,
-    "Cleave": true
+    "IMask": true
   },
   "rules": {
     "no-unused-vars": [
       "error",
       {
-        "varsIgnorePattern": "cleave"
+        "varsIgnorePattern": "mask"
       }
     ]
   }

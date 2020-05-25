@@ -29,9 +29,10 @@ function init() {
   });
 }
 
-var cleave = new Cleave('.header__form input[type=tel]', {
-  phone: true,
-  phoneRegionCode: 'RU',
-});
+var telInput = document.querySelector('.header__form input[type=tel]');
+var maskOptions = {
+  mask: '{8} (000) 000-00-00'
+};
+var mask = new IMask(telInput, maskOptions);
 
 ymaps.ready(init);
