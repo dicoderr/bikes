@@ -3,10 +3,13 @@ var burger = document.querySelector('.navbar__burger');
 var navbar = document.querySelector('.navbar');
 var menuLinks = document.querySelectorAll('.navbar__menu-link');
 
-if (burger && navbar) {
-  burger.addEventListener('click', function () {
-    navbar.classList.toggle('shown');
-  });
+if (navbar) {
+  navbar.classList.remove('shown', 'noscript');
+  if (burger) {
+    burger.addEventListener('click', function () {
+      navbar.classList.toggle('shown');
+    });
+  }
 }
 
 Array.prototype.slice.call(menuLinks).forEach(function (link) {

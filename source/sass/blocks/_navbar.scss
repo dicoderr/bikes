@@ -7,12 +7,6 @@
   color: $color-white;
 }
 
-.navbar__checkbox {
-  position: absolute;
-
-  visibility: hidden;
-}
-
 .navbar__burger {
   display: none;
 }
@@ -177,19 +171,30 @@
     }
   }
 
-  .navbar.shown .navbar__menu,
-  .navbar__checkbox:checked ~ .navbar__menu {
+  .navbar.noscript {
+    position: static;
+
+    .navbar__menu {
+      position: static;
+
+      height: 500px;
+    }
+
+    .navbar__burger {
+      display: none;
+    }
+  }
+
+  .navbar.shown .navbar__menu {
     display: flex;
   }
 
-  .navbar.shown .navbar__burger,
-  .navbar__checkbox:checked ~ .navbar__burger {
+  .navbar.shown .navbar__burger {
     opacity: 0.2;
     background-color: $color-white;
   }
 
-  .navbar.shown .navbar__burger i,
-  .navbar__checkbox:checked ~ .navbar__burger i {
+  .navbar.shown .navbar__burger i {
     border: none;
 
     &::before {
