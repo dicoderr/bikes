@@ -4,7 +4,10 @@
   font-style: normal;
 
   font-display: auto;
-  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/Open_Sans-normal-300.woff") format("woff");
+  src: local("Open Sans Light"),
+    local("OpenSans-Light"),
+    url("../fonts/OpenSans-Light.woff") format("woff"),
+    url("../fonts/OpenSans-Light.woff2") format("woff2");
   unicode-range: u+0-10ffff;
 }
 
@@ -14,7 +17,10 @@
   font-style: normal;
 
   font-display: auto;
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/Open_Sans-normal-400.woff") format("woff");
+  src: local("Open Sans Regular"),
+    local("OpenSans-Regular"),
+    url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2");
   unicode-range: u+0-10ffff;
 }
 
@@ -24,7 +30,10 @@
   font-style: normal;
 
   font-display: auto;
-  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("../fonts/Open_Sans-normal-600.woff") format("woff");
+  src: local("Open Sans SemiBold"),
+    local("OpenSans-SemiBold"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff"),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
   unicode-range: u+0-10ffff;
 }
 
@@ -34,7 +43,10 @@
   font-style: normal;
 
   font-display: auto;
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/Open_Sans-normal-700.woff") format("woff");
+  src: local("Open Sans Bold"),
+    local("OpenSans-Bold"),
+    url("../fonts/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2");
   unicode-range: u+0-10ffff;
 }
 
@@ -44,7 +56,10 @@
   font-style: normal;
 
   font-display: auto;
-  src: local("Overpass Regular"), local("Overpass-Regular"), url("../fonts/Overpass-normal-400.woff") format("woff");
+  src: local("Overpass Regular"),
+    local("Overpass-Regular"),
+    url("../fonts/Overpass-Regular.woff") format("woff"),
+    url("../fonts/Overpass-Regular.woff2") format("woff2");
   unicode-range: u+0-10ffff;
 }
 
@@ -54,7 +69,10 @@
   font-style: normal;
 
   font-display: auto;
-  src: local("Overpass SemiBold"), local("Overpass-SemiBold"), url("../fonts/Overpass-normal-600.woff") format("woff");
+  src: local("Overpass SemiBold"),
+    local("Overpass-SemiBold"),
+    url("../fonts/Overpass-SemiBold.woff") format("woff"),
+    url("../fonts/Overpass-SemiBold.woff2") format("woff2");
   unicode-range: u+0-10ffff;
 }
 
@@ -64,6 +82,9 @@
   font-style: normal;
 
   font-display: auto;
-  src: local("Overpass Bold"), local("Overpass-Bold"), url("../fonts/Overpass-normal-700.woff") format("woff");
+  src: local("Overpass Bold"),
+    local("Overpass-Bold"),
+    url("../fonts/Overpass-Bold.woff") format("woff"),
+    url("../fonts/Overpass-Bold.woff2") format("woff2");
   unicode-range: u+0-10ffff;
 }
